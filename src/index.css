@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&display=swap');
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,9 +6,95 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(251, 24, 225);
+
+  background-repeat: no-repeat;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+.home_image{
+  width: 380px;
+  height: 350px;
+  margin-left: 240px;
+  margin-top: 30px;
+  opacity: 0.9;
 }
+.lotties{
+  display: flex;
+ 
+  justify-content: space-around;
+  
+  height: 400px;
+  
+}
+
+.home{
+  
+  color: rgb(251, 242, 242);
+  text-decoration: underline;
+  font-style: italic;
+  cursor: pointer;
+  
+
+}
+h1{
+  margin-left:70px;
+  margin-top: 30px;
+}
+h3,p,button{
+  margin-top: 20px;  
+  margin-left: 70px;
+}
+button{
+  background-color: white;
+  width: 200px;
+  height: 50px;
+  border-radius: 30px;
+  border: none;
+  font-style: italic;
+  margin-bottom: 10px;
+}
+Link{
+  text-decoration: none;
+}
+.button-icon :hover{
+  transform: translateX(00.25rem);
+}
+
+@media screen and (max-width: 992px) {
+  h1{
+    margin-left:70px;
+    margin-top: 30px;
+  }
+  h3,p,button{
+    margin-top: 20px;  
+    margin-left: 70px;
+  }
+}
+/* For medium devices */
+
+
+@media screen and (max-width: 576px) {
+  h1{
+    margin-left:30px;
+    margin-top: 10px;
+    font-size: medium;
+  }
+  h3,p,button{
+    margin-top: 20px;  
+    margin-left: 30px;
+    font-size: small;
+  }
+}
+
+/* For small devices */
+@media screen and (max-width: 350px) {
+  .about_info{
+      grid-template-columns: repeat(2,1fr);
+
+  }
+  
+}
+
+
+

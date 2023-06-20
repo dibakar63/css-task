@@ -1,0 +1,85 @@
+.container{
+    display: grid;
+    place-items: center;
+        grid-template-columns: repeat(2,1fr);
+       margin:10px;
+        cursor: pointer;
+        background-image: url('./assets/sphagetti.jpg');
+      background-position-x: center;
+        
+        
+    
+}
+.card{
+    background-color: white;
+    border: none;
+    box-sizing: border-box;
+    padding: 10px;
+    border-radius: 30px;
+    
+    margin-top: 20px;
+    font-style: oblique;
+    box-shadow: 30px -20px 42px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: 30px -20px 42px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 30px -20px 42px 0px rgba(0,0,0,0.75);
+
+    
+     
+    
+}
+
+
+
+img{
+    width: 350px;
+    height: 200px;
+    border-radius: 30px;
+}
+img:hover{
+    width: 370px;
+    transition: 0.1ms;
+
+}
+
+
+.menu{
+    display: flex;
+    justify-content: space-around;
+    margin: 10px;
+}
+h5{
+    text-align: center;
+}
+h5:hover{
+    font-weight: bolder;
+}
+@media screen and (max-width: 992px) {
+    .container{
+        grid-template-columns: 2fr;
+        column-gap: 2.5rem;
+    }
+    
+}
+  
+  /* For medium devices */
+  
+  
+  @media screen and (max-width: 576px) {
+    .about_info{
+        grid-template-columns: repeat(3,1fr);
+    }
+    .about_description{
+        padding: 0;
+    }
+  }
+  
+  /* For small devices */
+  @media screen and (max-width: 350px) {
+    .about_info{
+        grid-template-columns: repeat(2,1fr);
+
+    }
+    
+  }
+  
+  
